@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Blog</title>
+    <link rel="stylesheet" href="Style/Styles.css" />
+    <link rel="stylesheet" href="Style/Layout.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="titulo">Super Blog</h1>
+    </header>
+    <nav>
+      <ul class="links" style="list-style-type: none; padding: 0">
+        <li><a class="refnav" href="#home">Home</a></li>
+        <li><a class="refnav" href="#about">About</a></li>
+        <li><a class="refnav" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main id="grid-conteiner">
+      <section id="home">
+        <h2>Home</h2>
+        <p class="parraf">Bienvenido a los Super Blogs.</p>
+        <article id="art1" class="post">
+          <h3>Computadora cuantica</h3>
+          <p class="parraf">
+            La computadora cuenaica se caracteriza por utilizar principios de la
+            mecánica cuántica para procesar información. El metodo de
+            procesamiento permite realizar cálculos complejos de manera más
+            eficiente que las computadoras clásicas. Los qubits son las unidades
+            básicas de información en una computadora cuántica. Debajo hay una
+            tabla de características:
+          </p>
+
+          <table #id="CaractCompCuantica">
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Superposición</td>
+                <td>
+                  Permite que los qubits estén en múltiples estados
+                  simultáneamente.
+                </td>
+              </tr>
+              <tr>
+                <td>Entrelazamiento</td>
+                <td>
+                  Los qubits pueden estar correlacionados de manera que el
+                  estado de uno afecta al otro, incluso a distancia.
+                </td>
+              </tr>
+              <tr>
+                <td>Interferencia</td>
+                <td>
+                  Los estados cuánticos pueden interferir entre sí, lo que
+                  permite la amplificación de resultados correctos y la
+                  cancelación de resultados incorrectos.
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="tfoot" colspan="2">
+                  Fuente: Ejemplo de tabla de características
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+          <br />
+          <img
+            width="30%"
+            src="/Media/CompuCuantica.webp"
+            alt="Computadora cuantica"
+          />
+        </article>
+        <article id="art2" class="post">
+          <h3>Innovaciones en contacto con clientes</h3>
+          <p class="parraf">
+            Nos muestran un sistema de contacto que lideraa el mercado
+          </p>
+          <h4>El video de la demo</h4>
+          <video width="500px" src="/Media/Demon2p.mp4" controls="true">
+            Tu navegador no recibe el formato
+          </video>
+        </article>
+        <article id="art3" class="post">
+          <h3>Como funciona el audio</h3>
+          <p class="parraf">
+            El audio se reproduce a través de un reproductor de medios. Estos
+            repordictuores permiten la reproducción de archivos de audio en
+            diferentes formatos.
+          </p>
+          <audio controls="true" src="/Media/Cancion redondos.mp3 redondos.mp3">
+            No compatible
+          </audio>
+        </article>
+        <article id="art4" class="post">
+          <h3>Como armar un servidor casero</h3>
+          <p class="parraf">
+            A continuación, te mostramos cómo armar un servidor casero paso a
+            paso.
+          </p>
+          <iframe
+            src="https://www.youtube.com/embed/WDXj9k0tnGg?si=xlEKjJPZYGwHEWfG"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+            frameborder="1 px"
+            width="500px"
+            height="300px"
+            >No cargo contenido</iframe
+          >
+        </article>
+      </section>
+      <aside>
+        <div class="conteiner-div">
+          <h3 class="titulo3">Blogs</h3>
+          <ul class="alinks" style="list-style-type: none; padding: 0">
+            <li><a href="#art1">Computadora cuantica</a></li>
+            <li><a href="#art2">Innovaciones en contacto con clientes</a></li>
+            <li><a href="#art3">Como funciona el audio</a></li>
+            <li><a href="#art4">Como armar un servidor casero</a></li>
+          </ul>
+        </div>
+      </aside>
+      <section id="about">
+        <h2>Acerca de nosotros</h2>
+        <p class="parraf">
+          Nuestra empresa se dedica a recopilar información sobre tecnologías
+          emergentes y sus aplicaciones.
+        </p>
+        <ol style="list-style-type: upper-roman">
+          <li>Hardware</li>
+          <li>Software</li>
+          <li>Redes</li>
+        </ol>
+      </section>
+      <section id="contact">
+        <h2 class="titulo2">Contacto</h2>
+        <form action="#" id="contactForm" method="post">
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Nombre"
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Mail"
+            required
+          />
+          <br />
+          <label for="tipoconsulta">Tipo de consulta:</label>
+          <select id="tipoconsulta" name="tipoconsulta" required>
+            <option value="">Seleccionar</option>
+            <option value="comentario">Comentario</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="problema">Problema</option>
+          </select>
+          <br />
+          <label for="message">Mensaje:</label>
+          <textarea
+            contenteditable="true"
+            placeholder="Inserte aqui su mensaje"
+            id="message"
+            name="message"
+            required
+          ></textarea>
+          <br />
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p class="parraf">&copy; 2023 Demo HTML. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
